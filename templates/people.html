@@ -1,0 +1,10 @@
+<html>
+    <body>
+        {% for person in people_df.itertuples() %}
+
+        <p>{{person.first_name}} {{person.last_name}} is a 
+            <b>{{person.role}}</b></p>
+
+        {% endfor %}
+    </body>
+</html>
